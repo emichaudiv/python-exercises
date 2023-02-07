@@ -19,11 +19,15 @@ class_time = True
 free_check = class_available and class_time 
 print (free_check)
 
+from datetime import date
+today = date.today()
+d1 = today.strftime("%d/%m/%Y")
+
 coupon_check = 2
-is_current = True
+is_current = 31/12/2023
 is_member = False
 
-purchase_w_coupon = (((coupon_check >= 2) and is_current) or is_member)
+purchase_w_coupon = (((coupon_check >= 2) and (is_current != d1)) or is_member)
 print (purchase_w_coupon)
 
 cred = dict(username = 'codeup', password = 'notastrongpassword')
