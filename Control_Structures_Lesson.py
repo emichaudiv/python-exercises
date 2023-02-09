@@ -72,6 +72,26 @@ while int(pos_please) != 0 :
         else :
                 pos_please = input('ONlY a number please.')
 
+while True:
+    odd_input = input('Enter an odd number and it will be skiped (Within 50)\n')
+    for r in range(1,51,2):
+            if odd_input.isdigit():
+                odd_input = int(odd_input)
+                if odd_input > 0 and odd_input < 50 and odd_input % 2 != 0:
+                    for r in range(1,51,2):
+                        if r == odd_input:
+                            continue
+                        else:
+                            print(r)
+                    response = input('Go again?\n')
+                    if response.lower()[0] != 'y':
+                        break
+     
+                    
+
+
+
+
 
 while True:
       my_num = input('Please enter interger: \n')
@@ -84,3 +104,19 @@ while True:
             continue_var = input('Enter more intergers?')
             if continue_var.lower().startswith('n'):
                   break
+
+while True:            
+    user_grade = int(input('Enter numeric Grade (0-100)\n'))
+    if user_grade >= 88:
+        print('A')
+    elif user_grade >= 80:
+        print('B')
+    elif user_grade >= 67:
+        print('C')
+    elif user_grade >= 60:
+        print('D')
+    else: 
+        print('F')
+    user_response = input('More grades to input? (y/n)\n')
+    if user_response.lower() !='y':
+         break
