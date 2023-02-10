@@ -85,12 +85,12 @@ def normalize_name(n):
 baby_input = normalize_name('o7tvngfafniwmrgaoltgvar7o48')
 print(baby_input)
 
-def cumulative_sum(s):
-    count = 0
-    list = 0
-    for s in list:
-        count += s
-        list.append(count)
-    return list
-math_stuff = cumulative_sum(1,3,5)
-print(math_stuff)
+# def cumulative_sum(s):
+#     count = 0
+#     list = 0
+#     for s in list:
+#         count += s
+#         list.append(count)
+#     return list
+# math_stuff = cumulative_sum([1,3,5])
+# print(math_stuff)
